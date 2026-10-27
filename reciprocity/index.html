@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give & Take</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <p class="label">AN INTERACTIVE EXPERIENCE</p>
+        <h1>Give & Take</h1>
+        <p class="intro">Every choice leaves something behind.</p>
+
+        <div class="card">
+            <p id="round">ROUND 1</p>
+            <h2 id="scenario">Your friend helped you yesterday. Today, they need your help. What do you do?</h2>
+
+            <div id="choices">
+                <button onclick="choose('help')">Help them</button>
+                <button onclick="choose('later')">Help them later</button>
+                <button onclick="choose('refuse')">Refuse</button>
+            </div>
+
+            <p id="response">Your choices will shape what happens next.</p>
+        </div>
+
+        <p id="history">Your story is just beginning.</p>
+        <button id="restart" onclick="restart()" hidden>Start again</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
